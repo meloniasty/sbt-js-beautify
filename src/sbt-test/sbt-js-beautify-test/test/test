@@ -1,0 +1,15 @@
+# Beautify file and check proper number of spaces.
+
+> backToRoots
+
+$ exists src/main/assets/plugin-test.js
+
+> assets
+
+> check4space
+
+> set it.impossible.sbt.Import.JsBeautifyKeys.config := Some(file("test.jsbeautifyrc"))
+
+> assets
+
+> check8space

@@ -29,9 +29,8 @@ object Import {
     val resolvedConfig = TaskKey[Option[File]](
       "jsbeautify-resolved-config",
       "The actual location of a JsBeautify configuration file if present. " +
-        "If jsbeautify-config is none then the task will seek a .jshintrc in the project folder. " +
-        "If that's not found then .jshintrc will be searched for in the user's home folder. " +
-        "This behaviour is consistent with other JsBeautify tooling."
+        "If jsbeautify-config is none then the task will seek a .jsbeautifyrc in the project folder. " +
+        "If that's not found then .jsbeautifyrc will be searched for in the user's home folder. "
     )
   }
 
